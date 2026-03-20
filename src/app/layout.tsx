@@ -46,6 +46,8 @@ export default function RootLayout({
   return (
     <html lang="ko" className={`${bebasNeue.variable} antialiased`}>
       <head>
+        <meta name="naver-site-verification" content="5d945905c03ff07850907c2ed6d709495003bfc6" />
+        <meta name="google-site-verification" content="iEdDHHYyScPB39_pJzKC12QiYAOYJQRGFtwsYLCGnw0" />
         <link
           rel="preload"
           href="https://cdn.jsdelivr.net/npm/pretendard@latest/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
