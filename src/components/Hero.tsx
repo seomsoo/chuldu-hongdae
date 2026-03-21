@@ -33,9 +33,9 @@ export default function Hero() {
               }}
             >
               <TextSwitch
-                texts={["CHULDU SMP", "출두 홍대점"]}
+                texts={["CHULDU SMP", "출두 두피문신"]}
                 interval={3500}
-                className="block text-5xl font-bold tracking-[0.08em] sm:text-7xl lg:text-[7rem]"
+                className="block text-5xl font-black tracking-[0.08em] sm:text-7xl lg:text-[7rem] text-nowrap"
                 style={{ fontFamily: "var(--font-display)" }}
               />
               <TextSwitch

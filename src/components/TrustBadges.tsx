@@ -47,12 +47,12 @@ export default function TrustBadges() {
   return (
     <section className="bg-bg-secondary py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory hide-scrollbar lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-visible">
+        <div className="flex gap-4 overflow-x-auto overflow-y-hidden snap-x snap-mandatory hide-scrollbar lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-visible">
           {IMAGE_BADGES.map((badge, i) => (
-            <ScrollReveal key={`${badge.label}-${i}`} delay={i * 0.1}>
+            <div key={`${badge.label}-${i}`} className="w-[75vw] shrink-0 snap-center lg:w-auto">
               <div
                 onClick={() => setLightbox(i)}
-                className="group relative w-[75vw] flex-shrink-0 snap-center cursor-pointer overflow-hidden rounded-sm border border-white/5 bg-bg-elevated p-5 transition-all hover:border-gold/20 lg:w-auto lg:p-6"
+                className="group relative cursor-pointer overflow-hidden rounded-sm border border-white/5 bg-bg-elevated p-5 transition-all hover:border-gold/20 lg:p-6"
               >
                 <div className="absolute left-0 top-0 h-0.5 w-full bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
                 <div className="relative mb-4 aspect-[4/3] w-full overflow-hidden rounded-sm bg-bg-surface">
@@ -71,7 +71,7 @@ export default function TrustBadges() {
                   {badge.description}
                 </p>
               </div>
-            </ScrollReveal>
+            </div>
           ))}
         </div>
 

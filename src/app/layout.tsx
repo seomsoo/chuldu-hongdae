@@ -9,7 +9,7 @@ const bebasNeue = Bebas_Neue({
 });
 
 export const metadata: Metadata = {
-  title: "홍대 두피문신 SMP 전문 | 출두 CHULDU 홍대점",
+  title: "홍대 두피문신 SMP 전문 | 출두 SMP 홍대점",
   description:
     "홍대 두피문신(SMP) 전문 출두. 3,000건+ 시술 경력, SMP 심사위원 정문찬 원장의 자연스러운 두피문신. M자 이마, 정수리 탈모, 여성 가르마, 흉터 커버 전문. 무료 상담 예약.",
   keywords:
@@ -64,8 +64,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "@id": "https://chulduhongdae.shop/#business",
-              name: "출두 CHULDU 홍대점",
-              alternateName: "출두SMP 홍대점",
+              name: "출두 SMP 홍대점",
+              alternateName: "출두 두피문신 홍대점",
               description:
                 "홍대 두피문신(SMP) 전문. 3,000건+ 시술 경력, SMP 심사위원 정문찬 원장의 자연스러운 두피문신. M자 이마, 정수리, 여성 가르마, 흉터 커버 전문.",
               image: "https://chulduhongdae.shop/og-image.jpg",
@@ -97,8 +97,8 @@ export default function RootLayout({
                   "Saturday",
                   "Sunday",
                 ],
-                opens: "00:00",
-                closes: "23:59",
+                opens: "10:00",
+                closes: "22:00",
               },
               sameAs: [
                 "https://www.instagram.com/chuldu_munchan/",
