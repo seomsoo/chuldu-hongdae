@@ -46,6 +46,12 @@ export default function RootLayout({
   return (
     <html lang="ko" className={`${bebasNeue.variable} antialiased`}>
       <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3R2J9JQCBV" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-3R2J9JQCBV');`,
+          }}
+        />
         <meta name="naver-site-verification" content="5d945905c03ff07850907c2ed6d709495003bfc6" />
         <meta name="google-site-verification" content="iEdDHHYyScPB39_pJzKC12QiYAOYJQRGFtwsYLCGnw0" />
         <link
