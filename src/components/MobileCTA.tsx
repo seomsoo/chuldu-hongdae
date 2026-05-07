@@ -54,22 +54,24 @@ export default function MobileCTA() {
         </div>
       </div>
 
-      <div className="fixed right-8 top-1/2 z-50 hidden -translate-y-1/2 flex-col gap-3 lg:flex">
-        {CTA_ITEMS.map((item) => (
-          <a
-            key={item.label}
-            href={item.href}
-            {...(item.external && { target: "_blank", rel: "noopener noreferrer" })}
-            className={`group flex h-14 w-14 items-center justify-center rounded-full border shadow-lg transition-all hover:scale-110 ${
-              item.primary
-                ? "border-gold/30 bg-gold text-bg-primary shadow-[0_4px_20px_rgba(201,169,110,0.3)] hover:shadow-[0_8px_28px_rgba(201,169,110,0.4)]"
-                : "border-white/10 bg-bg-elevated/90 text-text-secondary backdrop-blur-sm hover:border-gold/30 hover:text-gold"
-            }`}
-            aria-label={item.label}
-          >
-            <item.icon size={24} />
-          </a>
-        ))}
+      <div className="fixed right-8 top-1/2 z-50 hidden -translate-y-1/2 lg:block">
+        <div className="flex flex-col gap-3">
+          {CTA_ITEMS.map((item) => (
+            <a
+              key={item.label}
+              href={item.href}
+              {...(item.external && { target: "_blank", rel: "noopener noreferrer" })}
+              className={`group flex h-14 w-14 items-center justify-center rounded-full border shadow-lg transition-all hover:scale-110 ${
+                item.primary
+                  ? "border-gold/30 bg-gold text-bg-primary shadow-[0_4px_20px_rgba(201,169,110,0.3)] hover:shadow-[0_8px_28px_rgba(201,169,110,0.4)]"
+                  : "border-white/10 bg-bg-elevated/90 text-text-secondary backdrop-blur-sm hover:border-gold/30 hover:text-gold"
+              }`}
+              aria-label={item.label}
+            >
+              <item.icon size={24} />
+            </a>
+          ))}
+        </div>
       </div>
     </>
   );

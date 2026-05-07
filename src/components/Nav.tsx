@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { BadgePercent, Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 
 const NAV_LINKS = [
@@ -37,6 +37,18 @@ export default function Nav() {
             : "bg-transparent"
         }`}
       >
+        <a
+          href="#contact"
+          className="flex h-9 items-center justify-center gap-2 border-b border-gold/25 bg-gold text-bg-primary px-4 text-center text-xs font-bold tracking-wide transition-colors hover:bg-gold-hover lg:h-10 lg:text-sm"
+        >
+          <BadgePercent size={16} strokeWidth={2.5} />
+          <span className="whitespace-nowrap">홈페이지 방문 고객</span>
+          <strong className="text-2xl font-bold leading-none lg:text-3xl">
+            20%
+          </strong>
+          <span className="whitespace-nowrap">특별 할인</span>
+        </a>
+
         <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 lg:h-20 lg:px-8">
           <a
             href="#"

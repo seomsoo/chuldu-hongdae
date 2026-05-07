@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Bebas_Neue } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const bebasNeue = Bebas_Neue({
@@ -46,12 +47,6 @@ export default function RootLayout({
   return (
     <html lang="ko" className={`${bebasNeue.variable} antialiased`}>
       <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3R2J9JQCBV" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-3R2J9JQCBV');`,
-          }}
-        />
         <meta name="naver-site-verification" content="5d945905c03ff07850907c2ed6d709495003bfc6" />
         <meta name="google-site-verification" content="iEdDHHYyScPB39_pJzKC12QiYAOYJQRGFtwsYLCGnw0" />
         <link
@@ -63,8 +58,10 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/pretendard@latest/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
         />
-        <script
+        <Script
+          id="business-structured-data"
           type="application/ld+json"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
@@ -133,8 +130,10 @@ export default function RootLayout({
             }),
           }}
         />
-        <script
+        <Script
+          id="faq-structured-data"
           type="application/ld+json"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
@@ -179,6 +178,13 @@ export default function RootLayout({
       </head>
       <body className="min-h-dvh flex flex-col overflow-x-hidden">
         {children}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-3R2J9JQCBV"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-3R2J9JQCBV');`}
+        </Script>
       </body>
     </html>
   );
