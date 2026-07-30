@@ -1,6 +1,7 @@
 import { MessageCircle, Phone } from "lucide-react";
 import ScrollReveal from "./ui/ScrollReveal";
 import DiscountCallout from "./DiscountCallout";
+import ConsultForm from "./ConsultForm";
 
 export default function Contact() {
   return (
@@ -20,7 +21,13 @@ export default function Contact() {
               고민 상담부터 시술 안내까지 친절히 도와드립니다.
             </p>
             <DiscountCallout className="mt-7 w-full max-w-lg text-left" />
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:[&>a]:w-52">
+            <div className="mt-7 flex w-full justify-center">
+              <ConsultForm />
+            </div>
+            <p className="mt-8 text-xs tracking-[0.1em] text-text-muted uppercase">
+              또는 바로 연락하기
+            </p>
+            <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:[&>a]:w-52">
               <a
                 href="http://pf.kakao.com/_kxinQG"
                 target="_blank"
