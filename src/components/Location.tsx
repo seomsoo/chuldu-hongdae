@@ -39,7 +39,7 @@ export default function Location() {
               Location
             </p>
             <h2 className="mt-2 text-2xl font-bold tracking-tight lg:text-4xl">
-              오시는 길
+              출두 홍대점 오시는 길
             </h2>
           </div>
         </ScrollReveal>
