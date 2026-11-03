@@ -45,7 +45,7 @@ export default function TrustBadges() {
   const [lightbox, setLightbox] = useState<number | null>(null);
 
   return (
-    <section className="bg-bg-secondary py-16 lg:py-24">
+    <section className="bg-bg-primary py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="flex gap-4 overflow-x-auto overflow-y-hidden snap-x snap-mandatory hide-scrollbar lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-visible">
           {IMAGE_BADGES.map((badge, i) => (
