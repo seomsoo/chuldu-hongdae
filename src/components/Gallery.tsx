@@ -11,65 +11,25 @@ type GalleryItem =
   | { type: "video"; src: string };
 
 const ALL_ITEMS: GalleryItem[] = [
-  { type: "image", src: "/images/gallery-1.jpg", alt: "홍대 두피문신 SMP 시술 결과" },
-  { type: "image", src: "/images/gallery-2.jpg", alt: "남성 정수리 두피문신 전후 비교" },
-  { type: "image", src: "/images/gallery-3.jpg", alt: "M자 이마 두피문신 시술 사례" },
-  { type: "image", src: "/images/gallery-4.jpg", alt: "출두 SMP 헤어라인 교정 결과" },
-  { type: "image", src: "/images/gallery-5.jpg", alt: "두피문신 자연스러운 밀도 표현" },
-  { type: "image", src: "/images/gallery-6.jpg", alt: "탈모 두피문신 커버 시술 후기" },
-  { type: "image", src: "/images/gallery-7.jpg", alt: "SMP 정수리 숱채움 시술 결과" },
-  { type: "image", src: "/images/gallery-8.jpg", alt: "홍대 SMP 전문 출두 시술 사례" },
-  { type: "image", src: "/images/gallery-9.jpg", alt: "남성 헤어라인 두피문신 전후" },
-  { type: "image", src: "/images/gallery-10.jpg", alt: "스칼프 마이크로피그먼테이션 시술 결과" },
-  { type: "image", src: "/images/gallery-11.jpg", alt: "두피문신 M자 탈모 커버 사례" },
-  { type: "image", src: "/images/gallery-12.jpg", alt: "정수리 두피문신 숱채움 전후 결과" },
-  { type: "image", src: "/images/gallery-13.jpg", alt: "자연스러운 두피문신 시술 전후" },
-  { type: "image", src: "/images/gallery-14.jpg", alt: "홍대 두피문신 정수리 시술 사례" },
-  { type: "image", src: "/images/gallery-15.jpg", alt: "SMP 헤어라인 복원 시술 결과" },
-  { type: "video", src: "/videos/gallery-17.mp4" },
-  { type: "image", src: "/images/gallery-18.jpg", alt: "서울 두피문신 SMP 시술 전후" },
-  { type: "image", src: "/images/gallery-19.jpg", alt: "남성 탈모 두피문신 커버 결과" },
-  { type: "image", src: "/images/gallery-20.jpg", alt: "출두 SMP 정수리 밀도 보강" },
-  { type: "image", src: "/images/gallery-21.jpg", alt: "두피문신 헤어라인 디자인 시술" },
-  { type: "image", src: "/images/gallery-22.jpg", alt: "홍대 SMP 전후 비교 사진" },
-  { type: "image", src: "/images/gallery-23.jpg", alt: "M자 탈모 두피문신 자연스러운 결과" },
-  { type: "image", src: "/images/gallery-24.jpg", alt: "정수리 탈모 SMP 시술 사례" },
-  { type: "image", src: "/images/gallery-25.jpg", alt: "두피문신 전문가 정문찬 시술 결과" },
-  { type: "image", src: "/images/gallery-26.jpg", alt: "SMP 시술 전후 변화 사례" },
-  { type: "image", src: "/images/gallery-27.jpg", alt: "홍대 두피문신 숱채움 결과" },
-  { type: "image", src: "/images/gallery-28.jpg", alt: "남성 SMP 헤어라인 시술 전후" },
-  { type: "image", src: "/images/gallery-29.jpg", alt: "출두 두피문신 M자 교정 사례" },
-  { type: "image", src: "/images/gallery-30.jpg", alt: "두피문신 정수리 시술 자연스러운 표현" },
-  { type: "image", src: "/images/gallery-31.jpg", alt: "SMP 탈모 커버 시술 전후 비교" },
-  { type: "image", src: "/images/gallery-32.jpg", alt: "홍대 SMP 전문 시술 결과 사진" },
-  { type: "image", src: "/images/gallery-33.jpg", alt: "두피문신 헤어라인 복원 전후" },
-  { type: "image", src: "/images/gallery-34.jpg", alt: "출두 SMP 숱보강 시술 사례" },
-  { type: "image", src: "/images/gallery-35.jpg", alt: "서울 홍대 두피문신 시술 결과" },
-  { type: "image", src: "/images/gallery-36.jpg", alt: "이선민 두피문신 SMP 시술 후기" },
-  { type: "image", src: "/images/gallery-37.jpg", alt: "두피문신 후 두피 건강 관리 안내" },
-  { type: "image", src: "/images/gallery-38.jpg", alt: "정수리 탈모 두피문신 전후 비교" },
-  { type: "image", src: "/images/gallery-39.jpg", alt: "뒷머리 정수리 SMP 밀도 보강 전후" },
-  { type: "image", src: "/images/gallery-40.jpg", alt: "측면 헤어라인 디자인 후 두피문신 결과" },
-  { type: "image", src: "/images/gallery-41.jpg", alt: "M자 이마 두피문신 정면 전후 비교" },
-  { type: "image", src: "/images/gallery-42.jpg", alt: "헤어라인 디자인부터 SMP 시술 완성까지" },
-  { type: "image", src: "/images/gallery-43.jpg", alt: "M자 헤어라인 교정 두피문신 전후" },
-  { type: "image", src: "/images/gallery-44.jpg", alt: "측면 헤어라인 SMP 시술 전후 비교" },
-  { type: "image", src: "/images/gallery-45.jpg", alt: "정면 헤어라인 두피문신 자연스러운 결과" },
-  { type: "image", src: "/images/gallery-46.jpg", alt: "두피문신 정면 단계별 변화 - 시술 전 디자인 완성" },
-  { type: "image", src: "/images/gallery-47.jpg", alt: "두피문신 측면 단계별 변화 - 시술 전 디자인 완성" },
-  { type: "image", src: "/images/gallery-48.jpg", alt: "헤어라인 두피문신 정면 단계별 시술 과정" },
-  { type: "image", src: "/images/gallery-49.jpg", alt: "헤어라인 두피문신 측면 단계별 시술 과정" },
-  { type: "image", src: "/images/gallery-50.jpg", alt: "중년 남성 헤어라인 SMP 시술 전후" },
-  { type: "image", src: "/images/gallery-51.jpg", alt: "홍대 두피문신 헤어라인 정면 시술 결과" },
-  { type: "image", src: "/images/gallery-52.jpg", alt: "M자 이마 SMP 측면 시술 전후 비교" },
+  { type: "image", src: "/images/gallery-1.jpg", alt: "M자 이마 헤어라인 두피문신 시술 전후" },
+  { type: "image", src: "/images/gallery-2.jpg", alt: "남성 헤어라인 SMP 시술 전후 비교" },
+  { type: "image", src: "/images/gallery-3.jpg", alt: "M자 탈모 두피문신 정면 전후" },
+  { type: "image", src: "/images/gallery-4.jpg", alt: "홍대 두피문신 헤어라인 교정 결과" },
+  { type: "image", src: "/images/gallery-5.jpg", alt: "측면 헤어라인 디자인 후 SMP 시술 과정" },
+  { type: "image", src: "/images/gallery-6.jpg", alt: "출두 홍대점 두피문신 시술 사례" },
+  { type: "image", src: "/images/gallery-7.jpg", alt: "자연스러운 헤어라인 두피문신 결과" },
+  { type: "image", src: "/images/gallery-8.jpg", alt: "남성 SMP 시술 전후 변화" },
+  { type: "image", src: "/images/gallery-9.jpg", alt: "홍대 SMP 전문 출두 시술 결과" },
+  { type: "image", src: "/images/gallery-10.jpg", alt: "두피문신 밀도 보강 시술 전후" },
+  { type: "image", src: "/images/gallery-11.jpg", alt: "정수리 탈모 두피문신 숱채움 전후" },
+  { type: "image", src: "/images/gallery-12.jpg", alt: "정수리 SMP 밀도 보강 시술 결과" },
 ];
 
 const ROW_SIZE = Math.ceil(ALL_ITEMS.length / 2);
 
 /** 마키 한 바퀴 시간(초).
- *  줄당 17개일 때 40초가 약 115px/s였는데, 26개면 콘텐츠가 1.5배 길어져
- *  같은 40초로는 그만큼 빨라진다. 체감 속도를 유지하려면 60초가 필요하다. */
-const MARQUEE_DURATION = 60;
+ *  줄당 17개일 때 40초가 약 115px/s였다. 줄당 7개면 같은 체감 속도에 약 16초. */
+const MARQUEE_DURATION = 16;
 
 /** Fisher-Yates. 원본은 건드리지 않는다. */
 function shuffle<T>(items: readonly T[]): T[] {
@@ -127,7 +87,7 @@ function GalleryCard({
 export default function Gallery() {
   // 이 페이지는 정적 생성되므로 렌더 중에 섞으면 서버 HTML과 어긋나 hydration이 깨진다.
   // 빌드 시점에는 고정 순서로 두고, 마운트 직후 한 번만 섞는다.
-  // 덕분에 방문할 때마다 앞에 서는 사진이 달라져 51장이 고르게 노출된다.
+  // 덕분에 방문할 때마다 앞에 서는 사진이 달라져 모든 사진이 고르게 노출된다.
   const [rows, setRows] = useState(() => splitRows(ALL_ITEMS));
 
   useEffect(() => {
@@ -155,7 +115,7 @@ export default function Gallery() {
 
   return (
     <>
-      <section id="gallery" className="bg-bg-primary py-16 lg:py-24">
+      <section id="gallery" className="bg-bg-secondary py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <ScrollReveal>
             <div className="mb-10 lg:mb-16">

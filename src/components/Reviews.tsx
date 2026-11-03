@@ -1,6 +1,7 @@
 import { Star } from "lucide-react";
 import ScrollReveal from "./ui/ScrollReveal";
 import Marquee from "./ui/Marquee";
+import ReviewPhotos from "./ReviewPhotos";
 
 const REVIEWS = [
   {
@@ -121,7 +122,9 @@ export default function Reviews() {
         </ScrollReveal>
       </div>
 
-      <Marquee className="py-2">
+      <ReviewPhotos />
+
+      <Marquee className="mt-4 py-2">
         <div className="flex gap-4 px-2">
           {REVIEWS.map((review) => (
             <ReviewCard key={review.id} review={review} />
